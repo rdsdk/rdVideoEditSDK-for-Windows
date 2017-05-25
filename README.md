@@ -21,15 +21,20 @@ Windows 视频编辑SDK
 <b>其它编辑功能</b> 支持多种比例裁剪； 支持90、180、270度旋转视频画面；  支持输出比例调整； 
 
 
-**最新SDK下载(以下链接是最新的，github代码会稍有延迟)：**
+# 最新SDK下载(以下链接是最新的，github代码会稍有延迟)： #
 
 [SDK下载请单击](https://codeload.github.com/rdsdk/rdVideoEditSDK-for-Windows/zip/master)
 
-**关于授权：**
+# 功能试用： #
+
+下载以下demo应用，可以进行功能试用。 [点击下载](https://codeload.github.com/rdsdk/rdVideoEditSDK-for-Windows/zip/master)
+
+# 关于授权： #
     [http://www.rdsdk.com/](http://www.rdsdk.com/) 致力于专业的人做专业的事，降低客户的开发时间和开发成本，你只需要支付很少的费用，花上几个小时就能增加视频编辑功能。
 
 
 [单击申请试用](http://www.rdsdk.com/home/business/registers)
+
 
 **SDK交流群**： 305128688
 
