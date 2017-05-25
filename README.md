@@ -26,3 +26,6 @@ Windows 视频编辑SDK
 [https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git](https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git "SDK 下载请单机")
 
 [https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git](https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git "SDK下载请单击")
+
+
+[rdVideoEditSDK-for-Windows-master.zip](rdVideoEditSDK-for-Windows-master.zip "下载连接")
