@@ -22,7 +22,8 @@ Windows 视频编辑SDK
 
 # 截图：
 
-![项目布局](../1.bmp)
+![项目布局](https://github.com/rdsdk/rdVideoEditSDK-for-Windows/blob/master/1.bmp)
+![123](https://github.com/rdsdk/rdVideoEditSDK-for-Windows/blob/master/1.bmp)
 
 # 最新SDK下载(以下链接是最新的，github代码会稍有延迟)： #
 
