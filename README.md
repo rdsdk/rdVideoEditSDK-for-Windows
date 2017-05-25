@@ -3,8 +3,8 @@ Windows 视频编辑SDK
 
 　　　rdVideoEditSDK含视频配音配乐、字幕特效、滤镜、转场等各种功能。
 　　　
+# SDK功能介绍: #
 
-<b>SDK功能介绍:</b>
 
 <b>滤镜</b> 内置主流滤镜，支持扩展更多滤镜
 
@@ -20,4 +20,9 @@ Windows 视频编辑SDK
 
 <b>其它编辑功能</b> 支持多种比例裁剪； 支持90、180、270度旋转视频画面；  支持输出比例调整； 
 
-　　　
+
+最新SDK下载(以下链接是最新的，github代码会稍有延迟)：
+
+[https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git](https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git "SDK 下载请单机")
+
+[https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git](https://github.com/rdsdk/rdVideoEditSDK-for-Windows.git "SDK下载请单击")
