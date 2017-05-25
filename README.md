@@ -37,6 +37,9 @@ Windows 视频编辑SDK
 [单击申请试用](http://www.rdsdk.com/home/business/registers)
 
 
+
+
+
 **SDK交流群**： 305128688
 
 **咨询电话**: 4008989105
