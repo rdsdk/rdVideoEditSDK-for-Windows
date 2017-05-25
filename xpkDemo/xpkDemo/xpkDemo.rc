@@ -1,0 +1,550 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\xpkDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\xpkDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 xpkDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "xpkDemo，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_XPKDEMO_DIALOG DIALOGEX 0, 0, 646, 324
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "xpkDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,317,303,50,14
+    PUSHBUTTON      "取消",IDCANCEL,589,303,50,14
+    CONTROL         "",IDC_DISPLAY,"Static",SS_BLACKFRAME,41,25,244,124
+    PUSHBUTTON      "Button2",IDC_BUTTON2,70,299,84,18
+END
+
+IDD_XPKPREVIEW DIALOGEX 0, 0, 723, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xpkDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_SHOW_PICTURE,19,31,345,229
+    LTEXT           "00:00",IDC_TIME_START,14,271,25,10
+    PUSHBUTTON      "PLAY",IDC_PLAY,50,291,54,17
+    PUSHBUTTON      "STOP",IDC_STOP,211,292,54,17
+    LTEXT           "00:00",IDC_TIME_END,691,269,25,10
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,483,15,229,248
+END
+
+IDD_XPKEDIT DIALOGEX 0, 0, 557, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xpkDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "EDIT",IDC_XPK_EDIT,258,283,50,14
+    LTEXT           "",IDC_SHOW_EDIAT_PICTURE,92,35,402,208
+    CTEXT           "输出文件路径:",IDC_STATIC_OUTPUT_FILE,39,11,78,12
+    EDITTEXT        IDC_EDIT_OUTPUT_PATH,130,7,216,17,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,93,261,407,14
+    LTEXT           "输出分辨率：",IDC_STATIC_OUT_RESOLUTION,367,11,48,14
+    COMBOBOX        IDC_EDIT_RESOLUTION,425,7,55,14,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_XPKADDMEDIA DIALOGEX 0, 0, 723, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "xpkDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "添加媒体",IDC_BUTTON1,21,17,49,14
+    PUSHBUTTON      "删除所有媒体",IDC_CLEARALLMEDIA,222,17,72,14
+    PUSHBUTTON      "删除媒体",IDC_DELETEMEDIA,137,17,72,14
+    LTEXT           "",IDC_MEDIA_DISPLAY,502,46,136,108
+END
+
+IDD_DIALOG_PICTURE_PROPERTY DIALOGEX 0, 0, 319, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "媒体设置"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CTEXT           "设置旋转角度:",IDC_STATIC,24,23,65,12
+    CTEXT           "设置翻转方式:",IDC_STATIC,29,55,53,12
+    CTEXT           "设置裁剪区域:",IDC_STATIC,24,90,65,12
+    PUSHBUTTON      "取消",IDCANCEL,262,180,50,14
+    DEFPUSHBUTTON   "确定",IDOK,209,180,50,14
+    LTEXT           "LEFT:",IDC_STATIC_LEFT,32,121,27,12
+    LTEXT           "TOP:",IDC_STATIC_TOP,83,121,27,15
+    LTEXT           "RIGHT:",IDC_STATIC_RIGHT,138,121,27,15
+    LTEXT           "BOTTOM:",IDC_STATIC_BOTTOM,192,122,36,15
+    EDITTEXT        IDC_EDIT_LEFT,52,121,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOP,108,121,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RIGHT,164,121,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOTTOM,224,121,25,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_CLIP,253,121,59,12
+    GROUPBOX        "1.编辑",IDC_STATIC,17,10,295,131
+    GROUPBOX        "2.调速",IDC_STATIC,20,149,292,27
+    CTEXT           "调速：",IDC_STATIC,56,161,29,11
+END
+
+IDD_MUSIC DIALOGEX 0, 0, 243, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "播放开始时间：",IDC_STATIC,12,30,57,12
+    LTEXT           "播放结束时间：",IDC_STATIC,119,30,57,14
+    CTEXT           "混音因子:",IDC_STATIC,20,71,48,12
+    LTEXT           "截取开始时间：",IDC_STATIC,12,49,57,11
+    LTEXT           "截取结束时间：",IDC_STATIC,118,48,56,15
+    EDITTEXT        IDC_MUSIC_TIMELINE_START,73,28,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSIC_TIMELINE_END,179,27,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSIC_CUT_TIME_START,73,48,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUSIC_CUT_TIME_END,179,47,47,13,ES_AUTOHSCROLL
+    CTEXT           "淡入时间:",IDC_STATIC,20,89,48,12
+    CTEXT           "淡出时间:",IDC_STATIC,20,106,48,12
+    PUSHBUTTON      "保存",IDC_MUSISC_SAVE,121,198,47,15
+    PUSHBUTTON      "取消",IDC_BUTTON7,179,198,47,15
+    CONTROL         "使用默认配音（明月几时有.MP3）",IDC_RADIO_MINGYUE,"Button",BS_AUTORADIOBUTTON,25,120,129,10
+    CONTROL         "使用默认配音（年年有鱼.MP3）",IDC_RADIO_YU,"Button",BS_AUTORADIOBUTTON,25,134,129,10
+    PUSHBUTTON      "选择配乐",IDC_CHOOSE_MUSIC,22,8,67,15
+    EDITTEXT        IDC_MUSIC_PATH,109,7,118,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "清除所有配乐",IDC_CLEAR_ALL_MUSIC,51,198,65,15
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,148,203,42
+    PUSHBUTTON      "删除",IDC_DELETE_MUSIC,16,198,32,15
+END
+
+IDD_SUBTITLE DIALOGEX 0, 0, 243, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,175,193,50,14
+    PUSHBUTTON      "完成",IDC_SUBTITLE_FINISH,128,193,44,14
+    EDITTEXT        IDC_SUBTITLE_TEXT,30,29,175,23,ES_AUTOHSCROLL
+    LTEXT           "设置字体颜色:",IDC_STATIC,16,56,52,13
+    PUSHBUTTON      "...",IDC_FONT_COLOR,180,54,39,12
+    LTEXT           "设置字体大小:",IDC_STATIC,15,75,52,13
+    COMBOBOX        IDC_COMBO1,72,74,32,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "加粗",IDC_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,93,61,12
+    CONTROL         "斜体",IDC_ITALICS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,93,61,12
+    CONTROL         "下划线",IDC_UNDERLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,93,61,12
+    LTEXT           "设置字体名字:",IDC_STATIC,107,76,52,13
+    COMBOBOX        IDC_COMBO2,165,74,53,15,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "LEFT:",IDC_STATIC,19,113,25,9
+    EDITTEXT        IDC_FONT_LEFT,50,111,46,12,ES_AUTOHSCROLL
+    LTEXT           "RIGHT:",IDC_STATIC,19,129,25,9
+    EDITTEXT        IDC_FONT_RIGHT,50,126,46,12,ES_AUTOHSCROLL
+    LTEXT           "TOP:",IDC_STATIC,135,111,25,9
+    EDITTEXT        IDC_FONT_TOP,166,109,36,12,ES_AUTOHSCROLL
+    LTEXT           "BOTTOM:",IDC_STATIC,126,129,34,9
+    EDITTEXT        IDC_FONT_BOTTOM,167,127,36,12,ES_AUTOHSCROLL
+    LTEXT           "R:255  G:255  B:255",IDC_CURRENT_COLOR,89,56,82,11
+    LTEXT           "<640",IDC_STATIC,100,128,25,11
+    LTEXT           "<360",IDC_STATIC,208,128,25,11
+    LTEXT           "<360",IDC_STATIC,207,110,25,11
+    LTEXT           "<640",IDC_STATIC,98,112,25,11
+    LTEXT           "字幕的开始时间:",IDC_STATIC,14,12,64,9
+    EDITTEXT        IDC_FONT_TIMELINE_START,82,10,31,14,ES_AUTOHSCROLL
+    LTEXT           "字幕的结束时间:",IDC_STATIC,121,12,64,9
+    EDITTEXT        IDC_FONT_TIMELINE_END,189,10,31,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "清除所有字幕",IDC_CLEAR_ALL_SUBTITLE,58,194,63,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,142,203,49
+    PUSHBUTTON      "删除",IDC_BUTTON1,20,194,33,14
+END
+
+IDD_APNG_RGBA DIALOGEX 0, 0, 242, 221
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,185,195,50,15
+    PUSHBUTTON      "完成",IDC_APNG_FINISH,128,195,46,15
+    GROUPBOX        "1.选择特效",IDC_STATIC,22,14,193,46
+    CONTROL         "年年有鱼",IDC_RADIO_FISH,"Button",BS_AUTORADIOBUTTON,34,27,64,11
+    CONTROL         "雪花",IDC_RADIO_SNOW,"Button",BS_AUTORADIOBUTTON,131,28,64,11
+    CONTROL         "黑线",IDC_RADIO_BLACK_LINE,"Button",BS_AUTORADIOBUTTON,34,43,64,11
+    CONTROL         "爱心",IDC_RADIO_LOVE,"Button",BS_AUTORADIOBUTTON,131,43,64,11
+    GROUPBOX        "2.设置时间",IDC_STATIC,25,65,190,61
+    LTEXT           "时间轴的开始时间：",IDC_STATIC,33,85,78,13
+    LTEXT           "时间轴的结束时间：",IDC_STATIC,33,106,78,13
+    EDITTEXT        IDC_EDIT_APNG_TIMELINE_START,125,82,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_APNG_TIMELINE_END,125,105,62,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "清除所有特效",IDC_CLEAR_ALL_APNG,64,194,58,16
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,25,134,194,47
+    PUSHBUTTON      "删除",IDC_DELETE_APNG,22,193,32,16
+END
+
+IDD_DIALOG_MEDIA_PROPERTY DIALOGEX 0, 0, 369, 426
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,222,405,58,14
+    PUSHBUTTON      "取消",IDCANCEL,299,405,50,14
+    LTEXT           "设置旋转角度:",IDC_STATIC,33,30,57,13
+    LTEXT           "设置翻转方式:",IDC_STATIC,34,50,57,13
+    LTEXT           "设置裁剪区域:",IDC_STATIC,36,72,57,13
+    LTEXT           "LEFT:",IDC_STATIC_LEFT,30,97,31,13
+    LTEXT           "TOP:",IDC_STATIC_TOP,89,97,31,16
+    LTEXT           "RIGHT:",IDC_STATIC_RIGHT,154,97,31,16
+    LTEXT           "BOTTOM:",IDC_STATIC_BOTTOM,217,99,42,16
+    EDITTEXT        IDC_EDIT_MEDIA_LEFT,53,97,29,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIA_TOP,119,97,29,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIA_RIGHT,184,97,29,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIA_BOTTOM,254,97,29,13,ES_AUTOHSCROLL
+    GROUPBOX        "1.编辑",IDC_STATIC,15,11,310,113
+    GROUPBOX        "2.截取",IDC_STATIC,18,136,307,55
+    LTEXT           "截取的开始时间：",IDC_STATIC,37,151,67,13
+    EDITTEXT        IDC_EDIT_MEDIA_CUT_START,117,149,66,14,ES_AUTOHSCROLL
+    LTEXT           "截取的结束时间：",IDC_STATIC,37,170,67,13
+    EDITTEXT        IDC_EDIT_MEDIA_CUT_END,117,168,66,14,ES_AUTOHSCROLL
+    GROUPBOX        "3.分割",IDC_STATIC,18,204,305,36
+    GROUPBOX        "4.变速",IDC_STATIC,16,246,305,42
+    CTEXT           "调速：",IDC_STATIC,38,266,41,13
+    LTEXT           "分割时间：",IDC_STATIC,39,220,62,10
+    EDITTEXT        IDC_EDIT_MEDIA_INALIENABLE_TIME,85,218,74,13,ES_AUTOHSCROLL
+    GROUPBOX        "5.动态裁剪",IDC_STATIC,18,299,337,97
+    LTEXT           "第一次裁剪位置：",IDC_STATIC,22,313,67,11
+    LTEXT           "第二次裁剪位置：",IDC_STATIC,21,337,67,11
+    LTEXT           "第三次裁剪位置：",IDC_STATIC,21,360,67,11
+    EDITTEXT        IDC_MEDIA_CLIP_1,89,313,72,13,ES_AUTOHSCROLL
+    LTEXT           "开始时间：",IDC_STATIC,170,313,40,11
+    EDITTEXT        IDC_MEDIA_CLIP_3,89,356,72,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MEDIA_CLIP_2,89,335,72,13,ES_AUTOHSCROLL
+    LTEXT           "裁剪位置格式：LEFT:TOP:RIGHT:BOTTOM",IDC_STATIC,22,379,205,14
+    CONTROL         "使用动态裁剪",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,400,107,13
+    EDITTEXT        IDC_MEDIA_CLIP_START_TIME_1,209,311,44,16,ES_AUTOHSCROLL
+    LTEXT           "结束时间：",IDC_STATIC,256,313,42,11
+    EDITTEXT        IDC_MEDIA_CLIP_END_TIME_1,301,310,44,16,ES_AUTOHSCROLL
+    LTEXT           "开始时间：",IDC_STATIC,170,335,40,11
+    EDITTEXT        IDC_MEDIA_CLIP_START_TIME_2,209,333,44,16,ES_AUTOHSCROLL
+    LTEXT           "结束时间：",IDC_STATIC,256,335,42,11
+    EDITTEXT        IDC_MEDIA_CLIP_END_TIME_2,301,332,44,16,ES_AUTOHSCROLL
+    LTEXT           "开始时间：",IDC_STATIC,170,358,40,11
+    EDITTEXT        IDC_MEDIA_CLIP_START_TIME_3,209,356,44,16,ES_AUTOHSCROLL
+    LTEXT           "结束时间：",IDC_STATIC,256,358,42,11
+    EDITTEXT        IDC_MEDIA_CLIP_END_TIME_3,301,355,44,16,ES_AUTOHSCROLL
+    LTEXT           "> 0",IDC_STATIC,194,151,58,12
+    LTEXT           "",IDC_MEDIA_CUT_END_TIME_STATIC,194,169,58,12
+    LTEXT           "单位：微妙",IDC_STATIC,275,151,47,12
+    LTEXT           "单位：微妙",IDC_STATIC,271,151,47,12
+    LTEXT           "单位：微妙",IDC_STATIC,271,169,47,12
+END
+
+IDD_FILTER DIALOGEX 0, 0, 244, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,165,193,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,126,204,63
+    GROUPBOX        "滤镜",IDC_STATIC,15,18,186,99
+    CONTROL         "流年",IDC_FLEETING_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,31,42,12
+    CONTROL         "候鸟",IDC_MIGRATORY_BIRD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,31,42,12
+    CONTROL         "云端",IDC_CLOUD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,31,42,12
+    PUSHBUTTON      "确定",IDC_FINISH,111,193,50,14
+    CONTROL         "近黄昏",IDC_DUSK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,60,42,12
+    CONTROL         "阴天",IDC_OVERCAST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,60,42,12
+    CONTROL         "檀岛",IDC_HAWAIIAN_LSLANDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,93,42,12
+    CONTROL         "晚霞",IDC_SUNSET_GLOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,60,42,12
+    PUSHBUTTON      "删除",IDC_DELETE,24,194,50,14
+    CONTROL         "云端",IDC_CLOUD2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,31,42,12
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,162,50,14
+END
+
+IDD_IDD_ADDFILTEDIALOG DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话框"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,209,179,50,14
+    PUSHBUTTON      "取消",IDCANCEL,263,179,50,14
+END
+
+IDD_LOADIMAGE DIALOGEX 0, 0, 308, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "静态",IDC_STATIC,45,30,182,42
+    PUSHBUTTON      "Button1",IDC_BUTTON1,166,94,65,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "xpkDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "xpkDemo.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_XPKDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 639
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 317
+    END
+
+    IDD_XPKPREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 716
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_XPKEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 550
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_XPKADDMEDIA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 716
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_DIALOG_PICTURE_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_MUSIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_SUBTITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_APNG_RGBA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_DIALOG_MEDIA_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 419
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_IDD_ADDFILTEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_LOADIMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 xpkDemo(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\xpkDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
