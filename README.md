@@ -25,7 +25,9 @@ Windows 视频编辑SDK
 
 [SDK下载请单击](https://codeload.github.com/rdsdk/rdVideoEditSDK-for-Windows/zip/master)
 
-**关于授权：**[www.rdsdk.com](www.rdsdk.com)致力于专业的人做专业的事，降低客户的开发时间和开发成本，你只需要支付很少的费用，花上几个小时就能增加视频编辑功能。
+**关于授权：**
+    [http://www.rdsdk.com/](http://www.rdsdk.com/) 致力于专业的人做专业的事，降低客户的开发时间和开发成本，你只需要支付很少的费用，花上几个小时就能增加视频编辑功能。
+
 
 [单击申请试用](http://www.rdsdk.com/home/business/registers)
 
