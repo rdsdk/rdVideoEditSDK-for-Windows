@@ -26,11 +26,11 @@ Windows 视频编辑SDK
 
 # 最新SDK下载(以下链接是最新的，github代码会稍有延迟)： #
 
-[SDK下载请单击](https://codeload.github.com/rdsdk/rdVideoEditSDK-for-Windows/zip/master)
+[SDK下载请单击](http://d.56show.com/rdsdk/private/pack/rd_videoedit_pc(C)_2017.05.26.zip)
 
 # 功能试用： #
 
-下载以下demo应用，可以进行功能试用。 [点击下载](https://codeload.github.com/rdsdk/rdVideoEditSDK-for-Windows/zip/master)
+下载以下demo应用，可以进行功能试用。 [点击下载](http://d.56show.com/rdsdk/private/pack/rd_videoedit_pc(C)_2017.05.26.zip)
 
 # 关于授权： #
 
