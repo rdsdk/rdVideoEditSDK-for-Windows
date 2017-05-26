@@ -1,7 +1,7 @@
 # rdVideoEditSDK-for-Windows
 Windows 视频编辑SDK
 
-　　　rdVideoEditSDK含视频配音配乐、字幕特效、滤镜、转场等各种功能。
+　　　rdVideoEditSDK含图片/视频配音配乐、字幕、滤镜、转场等各种功能。
 　　　
 # SDK功能介绍: #
 
